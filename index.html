@@ -3,24 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboarrd</title>
+    <title>Dashboard</title>
+    <script
+      src="https://kit.fontawesome.com/4754da88c5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Mobile Overlay -->
-    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="dashboard">
+      <!-- Mobile Overlay -->
+      <div class="mobile-overlay" id="mobile-overlay"></div>
 
-    <!-- Header -->
-    <header class="header"></header>
+      <!-- Header -->
+      <header class="header">
+        <!-- Header left -->
+        <div class="header-left">
+          <button class="mobile-toggle">
+            <i class="fas fa-bars"> </i>
+          </button>
+          <div class="search-bar">
+            <i class="fas fa-search"> </i>
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar"></aside>
+        <!-- Header Right -->
+        <div class="header-right">
 
-    <!-- Main Content -->
-    <main class="content"></main>
+          <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"> </i>
+          </button>
 
-    <!-- Footer -->
-    <footer class="footer"></footer>
+          <div class="notification">
+            <i class="fas fa-bell"></i>
+            <span class="badge">3</span>
+          </div>
+
+          <div class="user-profile">
+            <img src="assets/images/avatar.png" alt="user-profile" />
+          </div>
+
+        </div>
+
+      </header>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <!-- Main Content -->
+      <main class="content"></main>
+
+      <!-- Footer -->
+      <footer class="footer"></footer>
+    </div>
 
     <!-- Javascript -->
     <script src="js/script.js"></script>
